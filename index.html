@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//CSS/style.css">
+    <title>Formato de Pago de Administración</title>
+</head>
+<body>
+    <h1>Formato de Pago de Administración</h1>
+    <form id="payment-form" class="grid-form">
+        <div class="form-field">
+            <label for="apartamento">Apartamento</label>
+            <input type="text" id="apartamento" placeholder="Ingrese el apartamento">
+        </div>
+        <div class="form-field">
+						<label for="torre">Torre</label>
+						<select id="torre">
+							<option value="1">Torre A</option>
+							<option value="2">Torre B</option>
+							<option value="3">Torre C</option>
+							<option value="4">Torre D</option>
+							<option value="5">Torre E</option>
+							<option value="6">Torre F</option>
+
+							<!-- Agrega más opciones según sea necesario -->
+					</select>
+        </div>
+        <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-field">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" placeholder="Ingrese su teléfono">
+        </div>
+        <div class="form-field">
+            <label for="valor-a-pagar">Valor a Pagar</label>
+            <input type="text" id="valor-a-pagar" placeholder="Ingrese el valor a pagar">
+        </div>
+        <button type="button" onclick="generarRecibo()">Generar Recibo</button>
+    </form>
+
+    <div id="recibo-container">
+        <canvas id="recibo"></canvas>
+        <a id="descargar" download="recibo.png" style="display: none;">Descargar Recibo</a>
+    </div>
+
+    <script src=".//JS/formato.js"></script>
+</body>
+</html>
