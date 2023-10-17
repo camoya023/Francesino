@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.form-field {
+  text-align: center;
+}
+
+label, input {
+  display: block;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#recibo-container {
+  text-align: center;
+  position: relative;
+}
+
+#recibo {
+  max-width: 100%;
+  width: 100%; /* La imagen ocupa el 100% del ancho de la pantalla */
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  font-size: 16px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#torre, #apartamento, #nombre, #telefono, #valor-a-pagar {
+  font-size: 16px;
+}
+
+#descargar {
+  text-decoration: none;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
